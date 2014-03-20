@@ -34,33 +34,4 @@ def pool(file):
 			break
 		print result.get()
 
-
-
-
 print pool("random.txt")	
-
-
-
-'''
-
-def split_mult():
-	pool = Pool(processes = 2)	
-	work = pool.map_async(split_words, files)
-	return work.get()
-
-#print split_words("random.txt", "random2.txt")	
-
-result_list = []
-def log_result(result):
-    result_list.append(result)
-
-def square(i):
-	return (i ** i)
-
-def test():
-	pool = Pool(processes = 4)
-	for i in range(10):
-		result = pool.map_async(square, [i], callback = log_result)
-	print result_list
-'''	
-
